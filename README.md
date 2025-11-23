@@ -12,7 +12,7 @@
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=k4isellyn&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
-### ✍️ Random Dev Quote
+
 <div style="background-color:#1a1b26; border:2px solid #7fdbca; border-radius:10px; padding:15px; color:#c0caf5; font-style:italic;">
 💭 "The quieter you become, the more you can hear." —Ram Dass 
 </div>
