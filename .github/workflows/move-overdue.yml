@@ -1,9 +1,9 @@
 name: Move Overdue Sprint Cards to Backlog & Notify Discord
 
 on:
-  workflow_dispatch:   # for manual testing
+  workflow_dispatch:   # Run manually for testing
   schedule:
-    - cron: '0 0 * * *' # daily at midnight UTC
+    - cron: '0 0 * * *' # Daily at midnight UTC
 
 jobs:
   move-overdue:
@@ -16,10 +16,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const sprints = ["Sprint 1","Sprint 2","Sprint 3","Sprint 4","Sprint 5","Sprint 6","Sprint 7","Sprint 8"];
-            const backlogColumnId = "Y3Vyc29yOnYyOpLODxOthqdCYWNrbG9n"; // your Backlog column ID
+            const backlogColumnId = "Y3Vyc29yOnYyOpLODxOthqdCYWNrbG9n"; // Backlog column ID
             const movedCards = [];
 
-            for(const sprint of sprints){
+            for (const sprint of sprints) {
               const { data: issues } = await github.rest.issues.listForRepo({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -27,8 +27,8 @@ jobs:
                 state: "open"
               });
 
-              for(const issue of issues){
-                if(issue.milestone && issue.milestone.due_on && new Date(issue.milestone.due_on) < new Date()){
+              for (const issue of issues) {
+                if (issue.milestone && issue.milestone.due_on && new Date(issue.milestone.due_on) < new Date()) {
                   try {
                     await github.graphql(`
                       mutation($cardId: ID!, $columnId: ID!) {
@@ -41,8 +41,8 @@ jobs:
                       columnId: backlogColumnId
                     });
                     movedCards.push(`${issue.title} (${sprint})`);
-                  } catch(e) {
-                    console.log(`Failed to move card ${issue.title}: ${e}`);
+                  } catch (e) {
+                    console.log(`Failed to move card ${issue.title}:`, e);
                   }
                 }
               }
@@ -51,11 +51,10 @@ jobs:
             return movedCards.join("\n");
 
       - name: Notify Discord
-        if: success()
-        uses: Ilshidur/action-discord@v1
+        uses: tsickert/discord-webhook@v7.0.0
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          message: |
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          content: |
             ⚠️ **Daily Scrum Update: Overdue Cards**
             The following overdue cards have been moved to **Backlog**:
             ${{ steps.move_overdue.outputs.result }}
