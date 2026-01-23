@@ -1,0 +1,31 @@
+name: Scrum Automation
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight UTC
+  issues:
+    types: [closed]
+  pull_request:
+    types: [closed]
+
+jobs:
+  move-overdue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move overdue Sprint 1 cards to Backlog
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/<your-username-or-org>/<repo>/projects/<project_number>
+          column-name: Backlog
+          milestone: Sprint 1
+
+  move-done:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move closed issues to Done
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/<your-username-or-org>/<repo>/projects/<project_number>
+          column-name: Done
