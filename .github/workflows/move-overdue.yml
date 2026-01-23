@@ -1,0 +1,62 @@
+name: Move Overdue Sprint Cards to Backlog & Notify Discord
+
+on:
+  workflow_dispatch:   # for manual testing
+  schedule:
+    - cron: '0 0 * * *' # daily at midnight UTC
+
+jobs:
+  move-overdue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move Overdue Cards
+        uses: actions/github-script@v6
+        id: move_overdue
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const sprints = ["Sprint 1","Sprint 2","Sprint 3","Sprint 4","Sprint 5","Sprint 6","Sprint 7","Sprint 8"];
+            const backlogColumnId = "Y3Vyc29yOnYyOpLODxOthqdCYWNrbG9n"; // your Backlog column ID
+            const movedCards = [];
+
+            for(const sprint of sprints){
+              const { data: issues } = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                milestone: sprint,
+                state: "open"
+              });
+
+              for(const issue of issues){
+                if(issue.milestone && issue.milestone.due_on && new Date(issue.milestone.due_on) < new Date()){
+                  try {
+                    await github.graphql(`
+                      mutation($cardId: ID!, $columnId: ID!) {
+                        moveProjectCard(input: {cardId: $cardId, columnId: $columnId}) {
+                          clientMutationId
+                        }
+                      }
+                    `, {
+                      cardId: issue.node_id,
+                      columnId: backlogColumnId
+                    });
+                    movedCards.push(`${issue.title} (${sprint})`);
+                  } catch(e) {
+                    console.log(`Failed to move card ${issue.title}: ${e}`);
+                  }
+                }
+              }
+            }
+
+            return movedCards.join("\n");
+
+      - name: Notify Discord
+        if: success()
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: |
+            ⚠️ **Daily Scrum Update: Overdue Cards**
+            The following overdue cards have been moved to **Backlog**:
+            ${{ steps.move_overdue.outputs.result }}
+            Project Board: https://github.com/users/k4isellyn/projects/1
