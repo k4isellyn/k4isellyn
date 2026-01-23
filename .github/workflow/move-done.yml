@@ -1,0 +1,28 @@
+name: Move Done Cards & Notify Discord
+
+on:
+  issues:
+    types: [closed]
+  pull_request:
+    types: [closed]
+
+jobs:
+  move-done:
+    runs-on: ubuntu-latest
+    steps:
+      # Move closed issues/PRs for all sprints
+      - name: Move Done cards to Done column
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Done
+
+      - name: Notify Discord
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: |
+            ✅ **Scrum Update:** A card was completed!
+            The card has been moved to **Done**.
+            Check the project board: https://github.com/users/k4isellyn/projects/1

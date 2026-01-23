@@ -1,0 +1,22 @@
+name: Daily Standup Reminder
+
+on:
+  schedule:
+    - cron: '0 9 * * 1-5'  # Mon-Fri 9 AM UTC
+
+jobs:
+  standup-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Standup Reminder
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: |
+            ⏰ **Daily Standup Reminder**
+            Team, please post your updates:
+            1️⃣ What you did yesterday  
+            2️⃣ What you will do today  
+            3️⃣ Any blockers  
+
+            Project Board: https://github.com/users/k4isellyn/projects/1

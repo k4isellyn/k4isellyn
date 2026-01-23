@@ -1,0 +1,76 @@
+name: Move Overdue Sprint Cards to Backlog & Notify Discord
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight UTC
+
+jobs:
+  move-overdue:
+    runs-on: ubuntu-latest
+    steps:
+      # Move overdue cards for each sprint
+      - name: Move overdue Sprint 1 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 1
+      - name: Move overdue Sprint 2 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 2
+      - name: Move overdue Sprint 3 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 3
+      - name: Move overdue Sprint 4 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 4
+      - name: Move overdue Sprint 5 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 5
+      - name: Move overdue Sprint 6 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 6
+      - name: Move overdue Sprint 7 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 7
+      - name: Move overdue Sprint 8 cards
+        uses: peter-evans/move-project-cards@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          project-url: https://github.com/users/k4isellyn/projects/1
+          column-name: Backlog
+          milestone: Sprint 8
+
+      - name: Notify Discord
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: |
+            ⚠️ **Daily Scrum Update: Overdue Cards**
+            Overdue cards for **all sprints** have been moved to the **Backlog**.
+            Review the project board: https://github.com/users/k4isellyn/projects/1

@@ -1,0 +1,44 @@
+name: Sprint Story Point Summary
+
+on:
+  schedule:
+    - cron: '0 17 * * 1-5'  # Every weekday at 5 PM UTC
+
+jobs:
+  sprint-summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Get Sprint Story Points and Progress
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const sprints = ["Sprint 1","Sprint 2","Sprint 3","Sprint 4","Sprint 5","Sprint 6","Sprint 7","Sprint 8"];
+            const projectUrl = "https://github.com/users/k4isellyn/projects/1";
+            let message = "📊 **Daily Sprint Story Point Summary**\n";
+            for(const sprint of sprints){
+              const {data: issues} = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                milestone: sprint,
+                state: "all"
+              });
+              let total = 0;
+              let done = 0;
+              for(const issue of issues){
+                const points = issue.labels.find(l => l.name.startsWith("SP:"))?.name.split(":")[1] || 0;
+                total += parseInt(points);
+                if(issue.state === "closed") done += parseInt(points);
+              }
+              message += `**${sprint}**: ${done}/${total} points completed\n`;
+            }
+            return message;
+
+      - name: Send Discord Summary
+        uses: Ilshidur/action-discord@v2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          message: ${{ steps.get_message.outputs.result }}
