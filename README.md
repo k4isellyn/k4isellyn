@@ -80,7 +80,12 @@
 
 [![](https://visitcount.itsvg.in/api?id=k4isellyn&icon=2&color=2)](https://visitcount.itsvg.in)
 
-*Curated with Precision & Security*
+<div style="background: linear-gradient(135deg, #1a1b26 0%, #16161e 100%); border: 1px dashed #7fdbca; border-radius: 12px; padding: 20px; max-width: 600px; margin: 15px auto; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+  <h3 style="color:#7fdbca; margin: 0 0 12px 0; letter-spacing: 2px; text-transform: uppercase; font-size: 15px;">🏛️ The Pillars of Stella</h3>
+  <div style="font-family: monospace; font-size: 11px; color: #565f89; letter-spacing: 3px;">
+    [ ▓▓▓▒░░░░░░░░░░░░ ]
+  </div>
+</div>
 
 <br/>
 
