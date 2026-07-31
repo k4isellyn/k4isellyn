@@ -65,7 +65,7 @@
 
 [![](https://visitcount.itsvg.in/api?id=k4isellyn&icon=2&color=2)](https://visitcount.itsvg.in)
 
-![](./assets/pillars_of_stella.svg)
+![](./assets/pillars_of_stella.svg?v=2)
 
 <br/>
 
