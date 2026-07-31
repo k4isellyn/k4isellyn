@@ -83,4 +83,9 @@
 
 *Curated with Precision & Security*
 
+<br/>
+
+*P.S. If fate grants me love again, may I cherish what I once took for granted.*
+
 </div>
+
