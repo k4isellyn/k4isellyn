@@ -3,9 +3,7 @@
 # 🌌 @k4isellyn
 
 ### **Cybersecurity Researcher • Backend Systems Architect • AI/ML Engineer**
-*Founder & Lead Architect of [Project Stella](file:///c:/Users/ACER/Documents/Stella)*
 
-[![Council Endorsed](https://img.shields.io/badge/Project%20Stella-Council%20Endorsed-7fdbca?style=for-the-badge&logo=obsidian&logoColor=white)](file:///c:/Users/ACER/Documents/Stella)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![GitHub Followers](https://img.shields.io/github/followers/k4isellyn?style=for-the-badge&color=89b4fa)](https://github.com/k4isellyn)
 
@@ -17,10 +15,9 @@
 
 </div>
 
-## 🏛️ Executive Summary & Council Review
+## 🏛️ Executive Summary
 
-**Project Stella Council Verdict:** `APPROVED & ELEVATED`  
-Following a comprehensive audit across all repositories by **The Council of Project Stella** (Chief Architect, Cybersecurity Architect, AI Research Lead, Backend Systems Engineer, and Devil's Advocate), this portfolio represents a high-integrity, multi-disciplinary engineering stack spanning enterprise backend systems, mobile hardware verification, machine learning research, and security-first architectures.
+A multi-disciplinary engineering portfolio spanning enterprise backend systems, mobile hardware verification, machine learning research, and security-first software architectures. Focused on developing robust, scalable digital solutions with clean logic and solid engineering practices.
 
 ---
 
@@ -54,12 +51,12 @@ A robust web application platform designed for organizational management, struct
 
 ---
 
-### 🔬 4. Project Stella — Hecate AI Research Lab
+### 🔬 4. PyTorch Computer Vision Laboratory
 > **Tech Stack:** `PyTorch` • `Python` • `NumPy` • `Pandas` • `Matplotlib` • `CUDA`
 
-A lifelong personal knowledge ecosystem and AI research laboratory governed by formal decision frameworks (ADRs).
+AI and machine learning research benchmarking neural architectures on computer vision datasets.
 
-- **EXP-003: PyTorch Vision Baseline Replication**: Replicated computer vision baselines on MNIST & CIFAR-10 datasets utilizing a modular ConvNet architecture (`Conv2d`, `BatchNorm2d`, `Dropout`, `Kaiming Normal` initialization, `AdamW` optimizer, and `CosineAnnealingLR` scheduler).
+- **PyTorch Vision Baseline Replication**: Replicated computer vision baselines on MNIST & CIFAR-10 datasets utilizing a modular ConvNet architecture (`Conv2d`, `BatchNorm2d`, `Dropout`, `Kaiming Normal` initialization, `AdamW` optimizer, and `CosineAnnealingLR` scheduler).
 
 ---
 
@@ -122,6 +119,6 @@ A collection of academic and system projects including task deadline tracking sy
 
 [![](https://visitcount.itsvg.in/api?id=k4isellyn&icon=2&color=2)](https://visitcount.itsvg.in)
 
-*Governed by Project Stella Council • Designed with Precision & Security*
+*Designed with Precision & Security*
 
 </div>
