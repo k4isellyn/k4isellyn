@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="125" viewBox="0 0 650 125">
+  <defs>
+    <linearGradient id="pillarsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#16161e"/>
+    </linearGradient>
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7fdbca"/>
+      <stop offset="50%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <filter id="pillarsGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <rect x="4" y="4" width="642" height="117" rx="12" fill="url(#pillarsBg)" stroke="#7fdbca" stroke-width="1.5" stroke-dasharray="6,4" filter="url(#pillarsGlow)"/>
+  
+  <text x="325" y="44" fill="#7fdbca" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" letter-spacing="2" text-anchor="middle">
+    🏛️ THE PILLARS OF STELLA
+  </text>
+  
+  <!-- Sleek progress container -->
+  <rect x="175" y="62" width="300" height="26" rx="13" fill="#1f2335" stroke="#3b4261" stroke-width="1"/>
+  
+  <!-- Animated pulse progress bar -->
+  <rect x="178" y="65" width="110" height="20" rx="10" fill="url(#progressGrad)">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="325" y="79" fill="#c0caf5" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="11" font-weight="600" letter-spacing="2" text-anchor="middle">
+    INITIALIZING ARCHITECTURE
+  </text>
+</svg>

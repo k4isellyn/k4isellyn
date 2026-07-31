@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="210" viewBox="0 0 800 210">
+  <defs>
+    <linearGradient id="journeyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#16161e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="792" height="202" rx="12" fill="url(#journeyBg)" stroke="#7fdbca" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <text x="400" y="38" fill="#7fdbca" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">
+    📖 THE JOURNEY
+  </text>
+  
+  <line x1="100" y1="50" x2="700" y2="50" stroke="#7fdbca" stroke-opacity="0.2" stroke-width="1"/>
+
+  <g fill="#c0caf5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-style="italic" text-anchor="middle">
+    <text x="400" y="80">Every journey begins with a quiet realization: the universe is vast, and our time within it is brief.</text>
+    <text x="400" y="104"><tspan fill="#7dcfff" font-weight="600" font-style="normal">For I yearn to embrace all the knowledge this world has to offer</tspan>—making this space a living chronicle,</text>
+    <text x="400" y="128">an evolving archive of curiosity, research, system architecture, and creation. Here, every lesson learned,</text>
+    <text x="400" y="152">every experiment conducted, and every breakthrough achieved is not an endpoint,</text>
+    <text x="400" y="176">but merely the opening chapter of an endless quest for understanding.</text>
+  </g>
+</svg>

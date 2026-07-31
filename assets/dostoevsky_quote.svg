@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="150" viewBox="0 0 800 150">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#16161e"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="792" height="142" rx="12" fill="url(#bgGrad)" stroke="#7fdbca" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="400" y="48" fill="#c0caf5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="middle">
+    "Man is a mystery. It must be unraveled, and if it takes a whole lifetime,"
+  </text>
+  <text x="400" y="74" fill="#c0caf5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="middle">
+    "don't say that it's a waste of time. I am occupied by this mystery because I want to be a human being."
+  </text>
+  <text x="400" y="114" fill="#7fdbca" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+    — Fyodor Dostoevsky <tspan fill="#565f89" font-weight="normal">(Letter to Mikhail Dostoevsky, 16 August 1839)</tspan>
+  </text>
+</svg>

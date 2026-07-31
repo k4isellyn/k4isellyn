@@ -6,12 +6,7 @@
 
 <br/>
 
-<div style="background-color:#1a1b26; border:1px solid #7fdbca; border-radius:12px; padding:20px; color:#c0caf5; text-align:center; max-width:750px; margin:0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-
-> *"Man is a mystery. It must be unraveled, and if it takes a whole lifetime, don't say that it's a waste of time. I am occupied by this mystery because I want to be a human being."*  
-> — **Fyodor Dostoevsky** *(Letter to Mikhail Dostoevsky, 16 August 1839)*
-
-</div>
+![](./assets/dostoevsky_quote.svg)
 
 <br/>
 
@@ -62,17 +57,7 @@
 
 ---
 
-## 📖 The Journey
-
-<div align="center">
-
-<div style="background-color:#1a1b26; border:1px solid #7fdbca; border-radius:12px; padding:20px; color:#c0caf5; text-align:center; max-width:750px; margin:0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-
-*Every journey begins with a quiet realization: the universe is vast, and our time within it is brief. For I yearn to embrace all the knowledge this world has to offer—making this space a living chronicle, an evolving archive of curiosity, research, system architecture, and creation. Here, every lesson learned, every experiment conducted, and every breakthrough achieved is not an endpoint, but merely the opening chapter of an endless quest for understanding.*
-
-</div>
-
-</div>
+![](./assets/the_journey.svg)
 
 ---
 
@@ -80,12 +65,7 @@
 
 [![](https://visitcount.itsvg.in/api?id=k4isellyn&icon=2&color=2)](https://visitcount.itsvg.in)
 
-<div style="background: linear-gradient(135deg, #1a1b26 0%, #16161e 100%); border: 1px dashed #7fdbca; border-radius: 12px; padding: 20px; max-width: 600px; margin: 15px auto; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
-  <h3 style="color:#7fdbca; margin: 0 0 12px 0; letter-spacing: 2px; text-transform: uppercase; font-size: 15px;">🏛️ The Pillars of Stella</h3>
-  <div style="font-family: monospace; font-size: 11px; color: #565f89; letter-spacing: 3px;">
-    [ ▓▓▓▒░░░░░░░░░░░░ ]
-  </div>
-</div>
+![](./assets/pillars_of_stella.svg)
 
 <br/>
 
