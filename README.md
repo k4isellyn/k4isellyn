@@ -62,16 +62,15 @@
 
 ---
 
-## 📊 Analytics & Activity
+## 📖 The Journey
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=k4isellyn&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=k4isellyn&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=k4isellyn&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<div style="background-color:#1a1b26; border:1px solid #7fdbca; border-radius:12px; padding:20px; color:#c0caf5; text-align:center; max-width:750px; margin:0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
 
-### 🏆 Achievements
-![](https://github-profile-trophy.vercel.app/?username=k4isellyn&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
+*Every journey begins with a quiet realization: the universe is vast, and our time within it is brief. For I yearn to embrace all the knowledge this world has to offer—making this space a living chronicle, an evolving archive of curiosity, research, system architecture, and creation. Here, every lesson learned, every experiment conducted, and every breakthrough achieved is not an endpoint, but merely the opening chapter of an endless quest for understanding.*
+
+</div>
 
 </div>
 
