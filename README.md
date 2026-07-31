@@ -4,99 +4,61 @@
 
 ### **Cybersecurity Researcher • Backend Systems Architect • AI/ML Engineer**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![GitHub Followers](https://img.shields.io/github/followers/k4isellyn?style=for-the-badge&color=89b4fa)](https://github.com/k4isellyn)
-
 <br/>
 
-> *"The quieter you become, the more you can hear."* — Ram Dass
+<div style="background-color:#1a1b26; border:1px solid #7fdbca; border-radius:12px; padding:20px; color:#c0caf5; text-align:center; max-width:750px; margin:0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+
+> *"Man is a mystery. It must be unraveled, and if it takes a whole lifetime, don't say that it's a waste of time. I am occupied by this mystery because I want to be a human being."*  
+> — **Fyodor Dostoevsky** *(Letter to Mikhail Dostoevsky, 16 August 1839)*
+
+</div>
+
+<br/>
 
 ---
 
 </div>
 
-## 🏛️ Executive Summary
+## 💻 Tech Stack & Capabilities
 
-A multi-disciplinary engineering portfolio spanning enterprise backend systems, mobile hardware verification, machine learning research, and security-first software architectures. Focused on developing robust, scalable digital solutions with clean logic and solid engineering practices.
-
----
-
-## 🚀 Featured Ecosystems & Projects
-
-### 📱 1. Tagify — Faculty Attendance & NFC Verification System
-> **Tech Stack:** `React Native` • `Expo Router` • `React 19` • `TypeScript` • `Vite` • `Supabase` • `TailwindCSS v3` • `Framer Motion` • `Magic UI`
-
-An end-to-end, enterprise-grade attendance and verification platform built for **Pamantasan ng Lungsod ng Valenzuela (PLV)**.
-
-- **Mobile Application**: Cross-platform Expo React Native app featuring hardware NFC scanning for faculty check-in, real-time push notifications, photo verification by checkers, dispute resolution workflows, and offline-capable edge functions.
-- **Web Admin Portal**: React 19 + Vite dashboard featuring Supabase Realtime Postgres subscriptions, hCaptcha auth protection, 5-minute lockout rate-limiting, interactive dispute management, location analytics, and device binding controls.
-
----
-
-### 📊 2. AppDev Survey Management System
-> **Tech Stack:** `ASP.NET Core 8.0` • `C#` • `PostgreSQL` • `Entity Framework Core` • `JWT` • `SendGrid` • `Docker` • `Swagger`
-
-A production-ready survey creation, response collection, and analytics engine built on ASP.NET Core 8.0.
-
-- **3-Tier Role-Based Access Control**: Granular permissions for `SuperAdmin`, `Admin` (Department level), and `Staff`.
-- **Dynamic Survey Engine**: Supports multi-type questions (Text, Choice, Rating, Date, Checkbox) with unique URL slug generation.
-- **Security & Compliance**: Complete audit trail logging (`CREATE`, `UPDATE`, `DELETE`, `LOGIN`), BCrypt password hashing, SendGrid OTP password reset (15-min single-use tokens), and Docker deployment configurations.
-
----
-
-### 🛡️ 3. Sakop Sanghaya System
-> **Tech Stack:** `ASP.NET Core MVC` • `C#` • `Entity Framework Core` • `SQL Server` • `Bootstrap`
-
-A robust web application platform designed for organizational management, structured record keeping, and community governance workflows.
-
----
-
-### 🔬 4. PyTorch Computer Vision Laboratory
-> **Tech Stack:** `PyTorch` • `Python` • `NumPy` • `Pandas` • `Matplotlib` • `CUDA`
-
-AI and machine learning research benchmarking neural architectures on computer vision datasets.
-
-- **PyTorch Vision Baseline Replication**: Replicated computer vision baselines on MNIST & CIFAR-10 datasets utilizing a modular ConvNet architecture (`Conv2d`, `BatchNorm2d`, `Dropout`, `Kaiming Normal` initialization, `AdamW` optimizer, and `CosineAnnealingLR` scheduler).
-
----
-
-### 📋 5. Student Task Tracker & CS Laboratory
-> **Tech Stack:** `C#` • `.NET` • `C++` • `Python` • `Algorithms`
-
-A collection of academic and system projects including task deadline tracking systems, algorithmic problem solving repositories, and data structure implementations.
-
----
-
-## 💻 Technical Mastery & Stack Matrix
+<div align="center">
 
 ### 🔐 Cybersecurity & Defense
-![Web Security](https://img.shields.io/badge/Web_Security-Penetration_Testing-red?style=flat-square&logo=kalilinux)
-![Auth](https://img.shields.io/badge/Authentication-JWT_%7C_OAuth2_%7C_BCrypt-blue?style=flat-square)
-![RLS](https://img.shields.io/badge/Database_Security-Supabase_RLS-emerald?style=flat-square&logo=supabase)
-![Protection](https://img.shields.io/badge/App_Protection-hCaptcha_%7C_Rate_Limiting-orange?style=flat-square)
+![Web Security](https://img.shields.io/badge/Web_Security-Penetration_Testing-red?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Vulnerability Analysis](https://img.shields.io/badge/Vulnerability-Analysis-purple?style=for-the-badge&logo=cisco&logoColor=white)
+![JWT Auth](https://img.shields.io/badge/Auth-JWT_%7C_OAuth2_%7C_BCrypt-blue?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Supabase RLS](https://img.shields.io/badge/Database_Security-Supabase_RLS-emerald?style=for-the-badge&logo=supabase&logoColor=white)
 
-### ⚙️ Backend & Systems Architecture
-![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=flat-square&logo=csharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/.NET_8.0-5C2D91?style=flat-square&logo=.net&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white)
+<br/>
 
-### 📱 Mobile & Web Frontend
-![React Native](https://img.shields.io/badge/React_Native-20232a?style=flat-square&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo-000000?style=flat-square&logo=expo&logoColor=white)
-![React 19](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+### ⚙️ Backend Systems & Infrastructure
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET_8.0-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-### 🤖 AI & Machine Learning
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+<br/>
+
+### 🌐 Mobile & Modern Web
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Expo](https://img.shields.io/badge/expo-000000?style=for-the-badge&logo=expo&logoColor=white)
+![React](https://img.shields.io/badge/react_19-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<br/>
+
+### 🤖 AI & Data Science
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+
+</div>
 
 ---
 
@@ -108,7 +70,7 @@ A collection of academic and system projects including task deadline tracking sy
 ![](https://nirzak-streak-stats.vercel.app/?user=k4isellyn&theme=tokyonight&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=k4isellyn&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-### 🏆 Achievements & Trophies
+### 🏆 Achievements
 ![](https://github-profile-trophy.vercel.app/?username=k4isellyn&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
 </div>
@@ -119,6 +81,6 @@ A collection of academic and system projects including task deadline tracking sy
 
 [![](https://visitcount.itsvg.in/api?id=k4isellyn&icon=2&color=2)](https://visitcount.itsvg.in)
 
-*Designed with Precision & Security*
+*Curated with Precision & Security*
 
 </div>
